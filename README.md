@@ -1,154 +1,78 @@
-\# Sistema de Gestión de Donaciones y Banco de Alimentos
 
-
+# Sistema de Gestión de Donaciones y Banco de Alimentos
 
 Sistema académico desarrollado con MySQL para administrar donaciones, productos, inventario, solicitudes y entregas de un banco de alimentos.
 
+---
 
-
-\---
-
-
-
-\## Menú de navegación
-
-
+## Menú de navegación
 
 | Sección | Acceso |
-
 |---|---|
+| 📄 Informe final | [Ver informe PDF](documentacion/Informe_Final_Base_de_Datos.pdf) |
+| 📝 Informe editable | [Ver informe Word](documentacion/Informe_Final_Base_de_Datos.docx) |
+| 📊 Diagrama entidad-relación | [Ver diagrama](documentacion/Modelo_Entidad_Relacion.png) |
+| 🗂️ Modelo relacional | [Ver modelo](documentacion/Modelo_Relacional.png) |
+| 🗄️ Base de datos | [Abrir script SQL](base_de_datos/banco_alimentos.sql) |
+| 💻 Consultas SQL | [Ver consultas](consultas/consultas.sql) |
 
-| 📄 Informe final | \[Ver informe PDF](documentacion/Informe\_Final\_Base\_de\_Datos.pdf) |
+---
 
-| 📝 Informe editable | \[Ver informe Word](documentacion/Informe\_Final\_Base\_de\_Datos.docx) |
-
-| 📊 Diagrama entidad-relación | \[Ver diagrama](documentacion/Modelo\_Entidad\_Relacion.png) |
-
-| 🗂️ Modelo relacional | \[Ver modelo](documentacion/Modelo\_Relacional.png) |
-
-| 🗄️ Base de datos | \[Abrir script SQL](base\_de\_datos/banco\_alimentos.sql) |
-
-| 💻 Consultas SQL | \[Ver consultas](consultas/consultas.sql) |
-
-
-
-\---
-
-
-
-\## Descripción del proyecto
-
-
+## Descripción del proyecto
 
 El proyecto consiste en diseñar e implementar una base de datos relacional que permita organizar y controlar las donaciones recibidas y los productos entregados a diferentes beneficiarios.
 
-
-
-\## Objetivo general
-
-
+## Objetivo general
 
 Desarrollar una base de datos que facilite la administración de la información de donantes, productos, inventario, beneficiarios, solicitudes, donaciones y entregas.
 
-
-
-\## Estructura de la base de datos
-
-
+## Estructura de la base de datos
 
 La base de datos está conformada por 11 tablas:
 
+1. DONANTES
+2. CATEGORIAS
+3. INVENTARIO
+4. PRODUCTOS
+5. DONACIONES
+6. DETALLE_DONACION
+7. BENEFICIARIOS
+8. SOLICITUDES
+9. DETALLE_SOLICITUD
+10. ENTREGAS
+11. DETALLE_ENTREGA
 
+## Contenido del repositorio
 
-1\. DONANTES
+- **documentacion/**: informe final y diagramas del proyecto.
+- **base_de_datos/**: script SQL para crear las tablas e insertar los datos.
+- **consultas/**: consultas SQL utilizadas en el proyecto.
 
-2\. CATEGORIAS
+## Requisitos
 
-3\. INVENTARIO
+- MySQL Server.
+- MySQL Workbench (recomendado).
 
-4\. PRODUCTOS
+## Instalación
 
-5\. DONACIONES
+1. Abrir MySQL Workbench.
+2. Conectarse al servidor MySQL.
+3. Abrir el archivo `base_de_datos/banco_alimentos.sql`.
+4. Ejecutar el script SQL.
+5. Comprobar la creación de las 11 tablas y sus registros.
 
-6\. DETALLE\_DONACION
-
-7\. BENEFICIARIOS
-
-8\. SOLICITUDES
-
-9\. DETALLE\_SOLICITUD
-
-10\. ENTREGAS
-
-11\. DETALLE\_ENTREGA
-
-
-
-\## Contenido del repositorio
-
-
-
-\- \*\*documentacion/\*\*: informe final y diagramas del proyecto.
-
-\- \*\*base\_de\_datos/\*\*: script SQL para crear las tablas e insertar los datos.
-
-\- \*\*consultas/\*\*: consultas SQL utilizadas en el proyecto.
-
-
-
-\## Requisitos
-
-
-
-\- MySQL Server.
-
-\- MySQL Workbench (recomendado).
-
-
-
-\## Instalación
-
-
-
-1\. Abrir MySQL Workbench.
-
-2\. Conectarse al servidor MySQL.
-
-3\. Abrir el archivo `base\\\_de\\\_datos/banco\\\_alimentos.sql`.
-
-4\. Ejecutar el script SQL.
-
-5\. Comprobar la creación de las 11 tablas y sus registros.
-
-
-
-\## Consultas realizadas
-
-
+## Consultas realizadas
 
 El archivo `consultas/consultas.sql` contiene operaciones de:
 
+- Selección y proyección.
+- Unión.
+- Intersección y diferencia.
+- Producto cartesiano con selección.
+- JOIN y agrupamiento.
 
+---
 
-\- Selección y proyección.
-
-\- Unión.
-
-\- Intersección y diferencia.
-
-\- Producto cartesiano con selección.
-
-\- JOIN y agrupamiento.
-
-
-
-\---
-
-
-
-\## Autoría
-
-
+## Autoría
 
 Proyecto académico desarrollado como parte de la asignatura de Bases de Datos.
-
