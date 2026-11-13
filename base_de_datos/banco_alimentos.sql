@@ -27,6 +27,9 @@ CREATE TABLE `beneficiarios` (
   `nombre_completo` varchar(25) NOT NULL,
   `tipo` varchar(12) NOT NULL,
   `documento` varchar(20) DEFAULT NULL,
+  `telefono` varchar(12) DEFAULT NULL,
+  `correo` varchar(30) DEFAULT NULL,
+  `direccion` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id_beneficiario`),
   UNIQUE KEY `documento` (`documento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -38,7 +41,7 @@ CREATE TABLE `beneficiarios` (
 
 LOCK TABLES `beneficiarios` WRITE;
 /*!40000 ALTER TABLE `beneficiarios` DISABLE KEYS */;
-INSERT INTO `beneficiarios` VALUES ('B001','Fundacion Esperanza','Fundacion','1192000001'),('B002','Comedor San Jose','Comedor','1192000002'),('B003','Casa Hogar Luz','Fundacion','1192000003'),('B004','Centro Solidario','Institucion','1192000004'),('B005','Comedor La Paz','Comedor','1192000005');
+INSERT INTO `beneficiarios` VALUES ('B001','Fundacion Esperanza','Fundacion','1192000001','0994567890','esperanza@gmail.com','Loja, Centro'),('B002','Comedor San Jose','Comedor','1192000002','0985678901','sanjose@gmail.com','Loja, San Jose'),('B003','Casa Hogar Luz','Fundacion','1192000003','0976789012','casahogarluz@gmail.com','Loja, Norte'),('B004','Centro Solidario','Institucion','1192000004','0967890123','centrosolidario@gmail.com','Loja, Sur'),('B005','Comedor La Paz','Comedor','1192000005','0958901234','comedordelapaz@gmail.com','Loja, El Valle');
 /*!40000 ALTER TABLE `beneficiarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -197,6 +200,9 @@ CREATE TABLE `donantes` (
   `nombre_completo` varchar(25) NOT NULL,
   `tipo` varchar(12) NOT NULL,
   `documento` varchar(20) DEFAULT NULL,
+  `telefono` varchar(12) DEFAULT NULL,
+  `correo` varchar(30) DEFAULT NULL,
+  `direccion` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id_donante`),
   UNIQUE KEY `documento` (`documento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -208,7 +214,7 @@ CREATE TABLE `donantes` (
 
 LOCK TABLES `donantes` WRITE;
 /*!40000 ALTER TABLE `donantes` DISABLE KEYS */;
-INSERT INTO `donantes` VALUES ('D001','Ana Torres','Persona','1101000001'),('D002','Luis Castillo','Persona','1101000002'),('D003','Mercado Central','Empresa','1191000001'),('D004','Rosa Jimenez','Persona','1101000004'),('D005','Comercial Loja','Empresa','1191000005');
+INSERT INTO `donantes` VALUES ('D001','Ana Torres','Persona','1101000001','0991234567','ana.torres@gmail.com','Loja, Centro'),('D002','Luis Castillo','Persona','1101000002','0982345678','luis.castillo@gmail.com','Loja, San Sebastian'),('D003','Mercado Central','Empresa','1191000001','072345678','mercadocentral@gmail.com','Loja, Centro'),('D004','Rosa Jimenez','Persona','1101000004','0973456789','rosa.jimenez@gmail.com','Loja, El Valle'),('D005','Comercial Loja','Empresa','1191000005','072456789','comercialloja@gmail.com','Loja, Norte');
 /*!40000 ALTER TABLE `donantes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -334,4 +340,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-11 16:47:02
+-- Dump completed on 2026-11-13  7:25:12
